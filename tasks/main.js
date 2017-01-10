@@ -1,6 +1,5 @@
 let read = require('./read'),
     write = require('./write'),
-    url = 'http://www.dytt8.net/index.html',
     async = require('async');
 module.exports = function (url, callback) {
     async.waterfall([
