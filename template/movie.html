@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h2 class="text-center">电影列表</h2>
+            </div>
+            <div class="panel-body">
+                <ul class="list-group">
+                    <%movies.forEach(function(movie){%>
+                        <li class="list-group-item"><a href="<%=movie.url%>"><%=movie.name%></a></li>
+                    <%})%>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
